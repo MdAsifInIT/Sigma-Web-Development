@@ -1,0 +1,16 @@
+div {
+    color: red;
+    background: grey;
+}
+
+span {
+    color: blueviolet;
+}
+
+p {
+    column-rule-color: darkred;
+}
+
+body {
+    background-color: silver;
+}
