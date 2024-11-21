@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Element Selector */
+        /* div {
+           /* background-color: aqua;  */
+        /* } */
+        body {
+            background-color: rgb(97, 95, 97);
+        }
+
+        /* Class Selector */
+        div.red {
+            background: aqua;
+        }
+
+        /* ID Selector */
+        #crimson {
+            background-color: crimson;
+        }
+
+        /* Child Selector: Applied when p is direct child of div!*/
+        div>p {
+            background-color: antiquewhite;
+        }
+
+        /* Descendant Selector: Applies for all the descendants 'p' of div*/
+        div p {
+            background-color: red;
+        }
+
+        /* Universal Selector: Applies to all the elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+        
+        a:link{
+            color: rgb(16, 198, 153);
+        }
+
+        a:active{
+            background-color: pink; 
+        }
+
+        a:hover{
+            background-color: orange;
+        }
+
+        p:first-child{
+            background-color: mediumspringgreen;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>I am first!</p>
+        <p>I am second!</p>
+    </main>
+
+    <div>
+        I am a div!
+        <article>
+            <p>I am a para inside article in div!</p>
+        </article>
+    </div>
+
+    <div class="red">
+        I am another div!
+        <p>
+            I am a para inside div!
+        </p>
+    </div>
+
+    <span id="crimson">
+        I am a span!
+    </span>
+
+    <div>
+        <a href="https://www.google.com">Click me to go to Google!</a>
+        <br>
+        <a href="https://www.randomguava.com">Click me to go to RandomGuava!</a>
+    </div>
+
+</body>
+
+</html>
