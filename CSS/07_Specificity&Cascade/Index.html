@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        div.emaroon {
+            color: maroon;
+        }
+
+        .ered {
+            color: red;
+        }
+
+        .egreen {
+            color: green;
+        }
+
+        .eblue {
+            color: blue;
+        }
+
+        div {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ered egreen eblue emaroon">
+        This is text under div.
+    </div>
+</body>
+
+</html>
