@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        .box {
+            border: 2px solid blue;
+            background-color: beige;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            border: 2px solid blue;
+            background-color: beige;
+            /* height: 40vh; */
+            min-height: 80vh;
+            /* max-height: 80vh; */
+            width: 80vw;
+            margin: 69px auto;
+            box-sizing: border-box;
+            /* font-size: 18px; */
+        }
+
+        .navbar p {
+            /* font-size: 2em; multiplies the inherited value */
+            font-size: 2rem;
+            /* multiplies root value(from html style segment)*/
+        }
+
+        .alter {
+            background: red;
+            border: 2px solid rgb(117, 137, 202);
+            background: rgb(160, 111, 121);
+            width: 80vw;
+            margin: auto;
+            /*width: 100vmin; */
+            /*vmin = height in laptop and width in phones.
+            It selects whichever is smaller*/
+            /*height: 100vmax; */
+            /* vmax selects whichever is larger.
+            So, it's width in laptop and height in phones*/
+        }
+
+        /* 
+        
+        Other Units: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Va1ues_and_Units
+        
+        */
+        div div.arc {
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        div div.arc div.art {
+            width: 50%;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a Box!
+    </div>
+
+    <div class="navbar">
+        <p>
+            Lodem ipsum dolor sit amet consectetur adipisicing elit. Eos, veniam. Aliquid quo at ut reiciendis dolores,
+            a magni quasi autem alias natus illum magnam esse tempora ab dolorem. Dolorum aut explicabo labore ea, quos
+            vitae deleniti velit delectus maxime itaque autem quia, eveniet est architecto, minus in modi voluptatum
+            exercitationem illo ab odit quod quis eius! Hic recusandae ipsam, ipsum deserunt, ipsa amet dolor similique
+            nobis nulla tempora perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam nisi
+            corrupti quo? Ab illo omnis facere quo illum magnam placeat quaerat officiis repellendus iure eveniet amet,
+            veniam saepe? Corrupti, reprehenderit repudiandae, eius ipsum earum commodi praesentium aspernatur voluptate
+            omnis repellendus eos cumque odit quibusdam similique libero nostrum pariatur cum at inventore aliquam.
+            Commodi reiciendis nobis laborum minima, ducimus omnis dicta consequuntur ipsum ipsam alias eveniet sunt
+            voluptate unde excepturi voluptatem laboriosam eius? Velit rerum reiciendis dolorum fugiat suscipit iste.
+            Quasi, voluptate perferendis! Cum temporibus, optio quia explicabo ea commodi, incidunt qui harum
+            repellendus enim ratione ullam! Nostrum qui architecto consequatur assumenda itaque incidunt, quo
+            voluptatem, adipisci tempora eveniet ea velit veritatis dolores debitis corrupti tempore labore soluta cum
+            provident, consectetur culpa tenetur necessitatibus exercitationem. Reiciendis natus facilis explicabo ullam
+            non molestias quos architecto quam eum, deserunt aspernatur dolores dolore ex repellendus sapiente
+            dignissimos mollitia labore. Vero rerum doloremque porro cum, eligendi praesentium dolorem repellat
+            voluptates velit tenetur nostrum ab maiores quae error ducimus eveniet molestiae aspernatur odit
+            necessitatibus cumque temporibus nobis dolor atque. Vel eligendi, nobis quisquam sint quidem accusantium
+            natus omnis laudantium dolorum sed aliquam qui earum ducimus eum quo aperiam ipsam architecto iusto magni?
+        </p>
+        <div class="arc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore ipsam repudiandae eum provident qui
+            aliquid consectetur eius cum minima illo quasi nesciunt placeat quisquam dolorem eaque rem assumenda odit
+            velit labore dolorum debitis aspernatur, cupiditate eos. Cumque neque nihil aspernatur possimus aliquam,
+            suscipit vitae molestiae quidem alias nesciunt fuga ullam vero? Iure ad doloribus incidunt sapiente repellat
+            autem! Rerum voluptatem et saepe dicta officia. Dolorum a voluptates repellendus!
+            <div class="art">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta expedita aut hic perferendis
+                dolorum ipsum, odio ea voluptatibus ex porro, quibusdam voluptate laborum mollitia magnam. Non,
+                dignissimos libero!
+            </div>
+        </div>
+    </div>
+
+    <div class="alter">
+        Here's the value!
+    </div>
+</body>
+
+</html>
