@@ -1,4 +1,4 @@
-## REPO UNDER CONSTRUCTION
+## Sigma Web Development Journey
 
 ## Introduction
 Welcome to the Sigma Web Development repository. This project is part of a web development course that I am pursuing. It can be found [here](https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w).
