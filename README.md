@@ -20,4 +20,4 @@ cd Sigma-Web-Development
 Follow the course videos to understand how to build and enhance the project step-by-step.
 
 ## Contributing
-Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+Feel free to fork this repository and submit pull requests.
