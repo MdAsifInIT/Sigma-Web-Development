@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Position Properties</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      border: 2px solid black;
+      height: 400px;
+      width: 500px;
+      margin: 2px;
+      padding: 2px;
+    }
+
+    .box1 {
+      background-color: blueviolet;
+      position: absolute;
+      /* Moves with respect to closest positioned ancestor! */
+      top: 0px;
+      left: 0px;
+
+      /* position: sticky; */
+      /* It will stick to it's position once scrolled till it's original position */
+      /* top: 0px;
+      height: 20px;
+      width: 100%; */
+    }
+
+    .box2 {
+      background-color: green;
+      /* position: relative;
+      bottom: 37px;
+      left: 30px; */
+      /* Deviation from original Position */
+      z-index: 1;
+    }
+
+    .box3 {
+      background-color: maroon;
+      position: fixed;
+      /* fixes the position on the screen, it won't move even when scrolling. */
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .box4 {
+      background-color: aquamarine;
+    }
+
+    .boss {
+      padding: 43px;
+      margin: 34px;
+      border: 3px solid blue;
+      /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+      /* position: absolute; */
+      /* transform: translate(0); */
+      /* filter: invert(0); */
+      /* perspective: 0em; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="boss">
+
+    <div class="box box1">
+    </div>
+
+    <div class="box box2">
+    </div>
+
+    <div class="box box3">
+    </div>
+
+    <div class="box box4">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
