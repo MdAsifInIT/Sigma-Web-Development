@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selectors</title>
+    <style>
+        .boxes {
+            font-size: 3rex;
+        }
+
+        .box:first-child {
+            font-size: 1.75fr;
+            background-color: rgb(221, 239, 255);
+        }
+
+        .box::first-line {
+            background-color: rgb(234, 234, 194);
+        }
+
+        .box::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+
+        .boxes * {
+            color: rgb(98, 54, 32);
+        }
+
+        /* Selector by specific data */
+        [reputation="high"] {
+            font-size: 33px;
+        }
+
+        /* Grouping Selectors */
+        div.ybox,
+        div.zbox {
+            margin: 0px 0px 0px 60px;
+            padding: 10px;
+
+        }
+
+        /* Pseudo selectors by Odd/Even */
+        .box:nth-child(even) {
+            background-color: rgb(227, 168, 168);
+        }
+
+        /* Selecting n-th child from below */
+        div.box:nth-last-child(1){
+            margin: 0px 0px 0px 150px;
+            border: 2px solid black;
+            padding: 0;
+            height: 66px;
+        }
+
+        /* before and after are pseudo elements and are used to insert text dynamically */
+        .boxes::before{
+            content:"This is a Heading added dynamically using 'before' pseudo element.";
+            color: red;
+        }
+
+        .boxes::after{
+            content: "This is a footer added dynamically using 'after' pseudo element.";
+            color: rgb(15, 75, 75);
+        }
+
+        /* Applying styles on selected elements */
+        ::selection{
+            color: white;
+            background-color: black;
+
+        }
+
+        /* Styling the Placeholder inside the input */
+        input::placeholder{
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro voluptates, mollitia
+            consequuntur fuga alias doloremque quam exercitationem perspiciatis blanditiis, possimus dolore ipsa. Omnis
+            animi voluptatum atque nisi quod quam, dolore fugit ipsam expedita reiciendis hic, tenetur consectetur
+            repellendus? Numquam error fuga amet saepe esse temporibus soluta facere delectus, placeat sed laudantium
+            modi nostrum odit, pariatur maxime accusantium ex quasi deleniti perspiciatis et, reiciendis natus! Fuga
+            tempore explicabo vel aliquid facilis exercitationem, esse aliquam molestiae consectetur, impedit autem
+            cupiditate obcaecati, iste modi ipsa sapiente? Debitis quidem repellat illo, nostrum ab magnam laboriosam?
+            Minus, a est.</div>
+        <div reputation="high" class="box">I am a BOX!</div>
+        <div class="box ybox">I am a BOX!</div>
+        <div class="box zbox">I am a BOX!</div>
+    </div>
+    <input type="text" placeholder="Enter Your Text Here!">
+</body>
+
+</html>
