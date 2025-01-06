@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        img {
+            float: left;
+            /* Makes this context able to have text floated around */
+
+        }
+
+        .cards {
+            border: 3px solid black;
+            display: flow-root;
+            /*Fixes the image overflow*/
+        }
+
+        .card:nth-child(3) {
+            border: 3px solid red;
+            clear: both;
+            /*Doesn't allow any floating in right/left/both */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9b20b01a-bd5f-4c57-9be6-f02e33277e08_1083x1500.jpeg"
+            alt="Meowna" width="200px">
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, rerum ratione! Impedit,
+            voluptatem. Minima assumenda ab a similique, laborum eaque voluptatum officia distinctio! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Possimus placeat saepe odio? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Minima obcaecati numquam beatae distinctio quis voluptates quam aspernatur? Aliquid quae
+            magnam nulla. Quos dolorum porro nisi, vitae, mollitia perspiciatis enim natus, consequuntur iusto itaque
+            fugit debitis! Necessitatibus iste molestias enim blanditiis et dignissimos provident omnis ut officiis
+            laboriosam tempore quae praesentium voluptas error, voluptates corrupti perspiciatis?</div>
+        <div class="card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure omnis officia obcaecati, minima
+            rerum molestiae unde aperiam? Distinctio possimus facilis tempora praesentium deserunt quisquam, rerum, modi
+            id ducimus ullam recusandae commodi blanditiis. Asperiores perferendis voluptates quo iusto voluptate,
+            aspernatur facilis magni, ea sit excepturi libero, ratione rem? Quis debitis dolores, perferendis natus
+            dolor recusandae corporis mollitia facilis. Non, consectetur. Beatae iusto temporibus laudantium nesciunt.
+            Nihil distinctio et autem delectus.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>

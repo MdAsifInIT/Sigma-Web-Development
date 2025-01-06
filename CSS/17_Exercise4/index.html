@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navbar Design</title>
+    <style>
+        :root{
+            --navbackground: hsl(211, 100%, 90%);
+            --butonbackground: hsl(211, 100%, 95%);;
+            --textcolor: hsl(212, 100%, 60%);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        li{
+            margin: 3px;
+            padding: 3px;
+            border-radius: 10px;
+            background: var(--butonbackground);
+            color: var(--textcolor);
+            
+        }
+
+        div.parent{
+            background-color: var(--navbackground)
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact US</li>
+        </ul>
+    </div>
+</body>
+</html>
