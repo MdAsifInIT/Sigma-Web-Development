@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      
+      .container {
+        border: 2px solid black;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+                    "side article article"
+                    "footer footer footer"
+                    "last last end";
+      }
+      .item {
+        height: 55px;
+        /* width: 55px; */
+        border: 2px solid red;
+        margin: 2px;
+      }
+      .item1 {
+        grid-area: nav;
+        background-color:aqua;
+    }
+    .item2 {
+        grid-area: side;
+        background-color: rgb(131, 151, 251);
+        
+      }
+      .item3{
+        grid-area: article;
+        background-color: rgb(201, 222, 152);
+      }
+      .item4{
+        grid-area: footer;
+        background-color: blanchedalmond;
+      }
+      .item5{
+        grid-area: last;
+        background-color: rgb(227, 227, 170);
+      }
+      .item6{
+        grid-area: end;
+        background-color: rgb(201, 186, 214);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+      <div class="item item6">6</div>
+    </div>
+  </body>
+</html>
