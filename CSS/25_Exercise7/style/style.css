@@ -124,3 +124,21 @@ div.maclinux {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+div.gridheader{
+  display: flex;
+  width: 60vw;
+  align-content:center;
+  place-self: center;
+  gap: 20px;
+  margin: 70px 10px 10px 10px;
+}
+div.gridheader img{
+  width: 60px;
+}
+div.gridheader h3{
+  font-weight: normal;
+  font-size: 13px;
+}
+div.gridheader h3 span{
+  font-size: 24px;
+}
