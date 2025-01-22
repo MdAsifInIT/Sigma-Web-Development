@@ -63,7 +63,7 @@ nav ul li span img.arrowdown {
   left: 4px;
 }
 div.container {
-  /* display: grid; */
+  display: grid;
   /* justify-items: center; */
   /* align-items: center; */
   height: 100vh;
@@ -124,21 +124,85 @@ div.maclinux {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-div.gridheader{
+div.gridheader {
   display: flex;
   width: 60vw;
-  align-content:center;
+  align-content: center;
   place-self: center;
   gap: 20px;
   margin: 70px 10px 10px 10px;
 }
-div.gridheader img{
+div.gridheader img {
   width: 60px;
 }
-div.gridheader h3{
+div.gridheader h3 {
   font-weight: normal;
   font-size: 13px;
 }
-div.gridheader h3 span{
+div.gridheader h3 span {
   font-size: 24px;
+}
+div.grid {
+  display: grid;
+  width: 60vw;
+  place-self: center;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 2px solid black; */
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+div.langcards {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  width: 275px;
+  height: 175px;
+  /* border: 2px solid red; */
+  justify-self: center;
+  align-items: center;
+}
+div.grid div.langcards div.lang {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+div.langcards .downloadbutton a {
+  display: inline-block;
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+div.langcards .sha {
+  word-break: break-word;
+  font-size: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  line-height: 1rem;
+}
+
+div.langcards .value {
+  word-break: break-word;
+  font-size: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  line-height: 1rem;
+  font-size: 8px;
+  text-align: center;
+}
+div.langcards .langvalue {
+  word-break: break-word;
+  font-size: 12px;
+  margin-top: 30px;
+  cursor: pointer;
+  line-height: 1rem;
+  position: absolute;
+  top: 10px;
+  font-size: 12px;
 }
