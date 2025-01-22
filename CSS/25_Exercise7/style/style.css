@@ -146,11 +146,16 @@ div.grid {
   display: grid;
   width: 60vw;
   place-self: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
   /* border: 2px solid black; */
   margin: 0;
   padding: 0;
   gap: 20px;
+}
+@media (max-width: 1024px) {
+  div.grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 div.langcards {
   display: flex;
