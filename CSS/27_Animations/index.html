@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-self: center;
+        background-color: beige;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .box {
+        background-color: aqua;
+        height: 40px;
+        width: 40px;
+        animation-name: myani;
+        /* Name  */
+        animation-duration: 2s;
+        /* Duration */
+        animation-delay: 1s;
+        /* Delay after which the animation will start */
+        animation-iteration-count: infinite;
+        /* How many times it will run */
+        animation-direction: alternate;
+        /* direction: reverse,  */
+        animation-timing-function: ease-in-out;
+        /* animation-play-state: paused; */
+      }
+
+      @keyframes myani {
+        from {
+          transform: translateX(0px) translateY(0px) scale(1);
+        }
+        to {
+          transform: translateX(160px) translateY(50px) scale(2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
